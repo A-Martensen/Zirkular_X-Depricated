@@ -1,0 +1,32 @@
+# Standard Vocabularies
+@prefix http: <http://www.w3.org/2011/http#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .  
+@prefix dcterms: <http://purl.org/dc/terms/> . 
+
+# DPP modules
+@prefix dpp-odp: <http://w3id.org/dppo/ontology/dpp-odp/>.  
+@prefix dpp-core: <http://w3id.org/dppo/ontology/dpp-core/>.  
+@prefix dpp-info: <http://w3id.org/dppo/ontology/dpp-info/>.  
+@prefix dpp-comp: <http://w3id.org/dppo/ontology/dpp-comp/>.  
+@prefix dpp-prov: <http://w3id.org/dppo/ontology/dpp-prov/>.  
+
+# your own
+@prefix brick: <https://brickschema.org/schema/Brick#> . 
+
+
+<https://zirkular-x.tech/ontology/network>
+    a owl:Ontology ;
+    owl:versionIRI <https://zirkular-x.tech/ontology/network/0.1> ;
+    rdfs:label "ZIRKULAR-X network ontology"@en ; 
+    owl:imports
+        <http://w3id.org/dppo/ontology/dpp-odp/> ,
+        <http://w3id.org/dppo/ontology/dpp-core/> ,
+        <http://w3id.org/dppo/ontology/dpp-info/> ,
+        <http://w3id.org/dppo/ontology/dpp-comp/> ,
+        <http://w3id.org/dppo/ontology/dpp-prov/> ,
+        <https://zirkular-x.tech/ontology/brick-extract-bot> ,
+        <https://zirkular-x.tech/ontology/zx-core>
+    .
